@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,700;1,300&display=swap');
+  
+*, *::before, *::after {
+ box-sizing: border-box;
+}
+
+
+body {
+ height: 100vh;
+ font-family: 'Figtree', sans-serif;
+ margin: 0;
+ letter-spacing: 0.5;
+ line-height: 1.5;
+ display: flex;
+ flex-direction: column;
+
+}
+
+header.container-navigasi {
+ max-width: 1200px;
+ width: 100%;
+ margin-inline: auto;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ padding-block: 1rem;
+ z-index :100;
+}
+
+
+header.container-navigasi .logo img{
+	width : 75px;
+}
+
+header.container-navigasi .nav-list ul {
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem 1rem;
+}
+
+header.container-navigasi .nav-list li {
+  list-style: none;
+}
+
+header.container-navigasi .nav-list li a {
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: black;
+  padding: 1rem 1.5rem;
+  transition: all .2s ease-in-out;
+}
+ 
+header.container-navigasi .nav-list li:hover a {
+  background-color: #E57C23;
+  color: white;
+  font-weight:900;
+  letter-spacing:0px;
+}
+
+main {
+  max-width: 1200px;
+  width: 100%;
+  margin-inline: auto;
+  padding: 4rem;
+  display: flex;
+  align-items: flex-start;
+  
+}
+
+
+.content {
+	flex: 1 ;
+	padding: 0px 70px 70px 70px;
+}
+
+
+
+h2 {
+	display: block;
+	font-size: 30px;
+	letter-spacing: 6px;
+	font-weight: 700;
+}
+
+.content h2 {
+	padding-top: 60px;
+	border-top: 1px solid #bdbdbd;
+}
+
+.artistMemberBox {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+	flex-wrap: wrap;
+}
+
+.artistMemberList {
+    flex: 1;
+    text-align: center;
+    margin: 10px;
+    padding: 0 0em 1em;
+	max-width: 220px;
+}
+
+
+li.artistMemberList img {
+	width: 180px;
+	border-radius: 100%;
+}
+
+.videobox {
+	list-style: none;
+	justify-content: center;
+}
+
+.videolist {
+	margin:30px;
+}
+
+
+aside {
+	text-align: center;
+    background-color: #f0f0f0; 
+    padding: 20px 25px 50px 25px; 
+    min-width: 220px;
+	border-radius: 2%;
+	box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.profile img{
+	width: 225px;
+	padding: 0 0 25px;
+	justify-content: center;
+}
+
+.profile h2{
+	letter-spacing:0.60;
+	font-weight:900;
+}
+
+.profile ul {
+	list-style:none;
+	padding:0 ;
+}
+
+.profile ul.profiledetails li{
+	padding:1;
+}
+
+footer {
+  background-color: #E57C23; 
+  color: white;
+  text-align: center; 
+  padding: 20px 0;
+}
+
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+	header.container-navigasi {
+    flex-direction: column;
+  }
+  
+  body {
+      font-size: 16px; /* Ganti dengan ukuran font yang Anda inginkan untuk perangkat mobile */
+    }
+
+    h1 {
+      font-size: 24px; /* Ukuran font judul */
+    }
+
+    h2 {
+      font-size: 20px; /* Ukuran font subjudul */
+    }
+
+    p {
+      font-size: 14px; /* Ukuran font paragraf */
+    }
+  header.container-navigasi .nav-list ul {
+    flex-wrap: wrap;
+    column-gap: .5rem;
+  }
+  
+  main .content-videography .videolist {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+  main .content-videography .videolist iframe {
+     width: 100%;
+	 height: auto;
+   }
+ 
+  main {
+      flex-direction: column;
+      align-items: center;
+    }
+	
+	
+	main .content {
+		order:2;
+		width: 100%;
+		padding: 1rem; /* Atur sesuai kebutuhan */
+    }
+
+    aside {
+		order:1;
+		max-width: 700px; 
+		border-radius: 2%;
+    }
+ 
+}
